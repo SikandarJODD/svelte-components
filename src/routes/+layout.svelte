@@ -4,6 +4,8 @@
 	import Navbar from '$lib/components/Navbar.svelte';
 </script>
 
-<SideBar />
 <Navbar />
-<slot />
+<SideBar>
+	<slot />
+</SideBar>
+

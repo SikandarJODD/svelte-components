@@ -2,8 +2,8 @@
 const config = {
   content: ["./src/**/*.{html,js,svelte,ts}"],
 
-  theme: {
-    extend: {}
+  daisyui: {
+    themes: ["winter", "night", "cupcake"],
   },
   plugins: [require('daisyui')]
 };

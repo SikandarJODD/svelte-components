@@ -1,8 +1,9 @@
 <script>
-	import { LayoutDashboard, LayoutGrid, Moon, PanelLeft, SunMedium } from 'lucide-svelte';
+	import { LayoutDashboard, LayoutGrid, Moon, PanelLeft, Sidebar, SunMedium } from 'lucide-svelte';
 	import { onMount } from 'svelte';
 	import { themeChange } from 'theme-change';
 	import { fade, scale } from 'svelte/transition';
+	import { isSideBar } from '$lib/store';
 
 	onMount(() => {
 		themeChange(false);
@@ -14,7 +15,7 @@
 	let isCheck = false; // for Dark - Light mode
 </script>
 
-<div class="navbar bg-base-100 md:px-4">
+<div class="navbar bg-base-100 md:px-7 h-16">
 	<div class="navbar-start">
 		<div class="dropdown">
 			<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
@@ -58,10 +59,16 @@
 		</ul>
 	</div>
 	<div class="navbar-end items-center">
-		<label for="my-drawer" class="drawer-button mx-3">
+		<!-- <label
+			for="my-drawer-2"
+			class="drawer-button mx-3"
+			on:click={() => {
+				isSideBar.update((n) => !n);
+			}}
+		>
 			<LayoutGrid size="22" color="#2995fa" />
-		</label>
-		<div data-set-theme={isCheck ? 'dark' : 'light'} data-act-class="ACTIVECLASS">
+		</label> -->
+		<div data-set-theme={isCheck ? 'night' : 'winter'} data-act-class="ACTIVECLASS">
 			<!-- <a class="btn">Button</a> -->
 			<button
 				on:click={() => {
