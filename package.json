@@ -31,7 +31,7 @@
 	"type": "module",
 	"dependencies": {
 		"lucide-svelte": "^0.259.0",
-		"svelte-legos": "^0.2.1",
+		"svelte-copy": "^1.4.1",
 		"theme-change": "^2.5.0"
 	}
 }
