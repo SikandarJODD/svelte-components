@@ -3,9 +3,9 @@ const config = {
   content: ["./src/**/*.{html,js,svelte,ts}"],
 
   daisyui: {
-    themes: ["winter", "night", "cupcake"],
+    themes: ["cmyk", "night", "cupcake"],
   },
-  plugins: [require('daisyui')]
+  plugins: [require('daisyui'), require('@tailwindcss/typography')]
 };
 
 module.exports = config;

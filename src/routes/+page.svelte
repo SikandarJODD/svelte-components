@@ -1,1 +1,1 @@
-<h1 class="p-2">Code</h1>
+<h1>Code</h1>
