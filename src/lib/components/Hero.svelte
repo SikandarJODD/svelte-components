@@ -1,23 +1,26 @@
 <script>
 	import Logo from '$lib/carbon.png';
+	import { Droplet, Text } from 'lucide-svelte';
 </script>
 
-<div class="relative isolate overflow-hidden " >
+<div class="relative isolate overflow-hidden">
 	<div class="mx-auto max-w-7xl px-6 pb-24 md:pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-24">
-		<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8 ">
-			<img
+		<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
+			<!-- <img
 				class="h-11 hidden sm:flex"
 				src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
 				alt="Your Company"
-			/>
+			/> -->
+			<!-- <Droplet class="h-11 hidden sm:flex" size="35" /> -->
+			<Text  class="h-11 hidden sm:flex" size="35"/>
 			<div class="mt-24 sm:mt-32 lg:mt-16">
-				<a href="/" class="inline-flex space-x-6">
+				<a href="/c" class="inline-flex space-x-6">
 					<span
-						class="rounded-full bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-600/10"
-						>What's new</span
+						class="rounded-md bg-indigo-600/5 px-3 py-1 text-sm font-semibold leading-6 text-success ring-1 ring-inset ring-success"
+						>Grids</span
 					>
 					<span
-						class="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600"
+						class="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-500 ring-1 ring-inset ring-success px-3 py-1 rounded-md"
 					>
 						<span>Just shipped v1.0</span>
 						<svg
@@ -36,10 +39,11 @@
 				</a>
 			</div>
 			<h1 class="mt-10 text-4xl font-bold tracking-tight text-success sm:text-6xl">
-				Svelte Components for  Websites
+				Svelte Components for Websites
 			</h1>
 			<p class="mt-6 text-lg leading-8 text-gray-500">
-				Simple Svelte Components for your website. No need to install any package. Just copy and paste the code.
+				Simple Svelte Components for your website. No need to install any package. Just copy and
+				paste the code.
 			</p>
 			<div class="mt-10 flex items-center gap-x-6">
 				<a
@@ -57,7 +61,7 @@
 		>
 			<div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
 				<div
-					class="md:-m-2 rounded-xl bg-[#FFFFFF21] p-2 ring-1 ring-inset ring-primary lg:-m-4 lg:rounded-2xl lg:p-4 "
+					class="md:-m-2 rounded-xl bg-[#FFFFFF21] p-2 ring-1 ring-inset ring-primary lg:-m-4 lg:rounded-2xl lg:p-4"
 				>
 					<img
 						src={Logo}
